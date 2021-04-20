@@ -1,2 +1,2 @@
 # furb
-Irei commitar todas as minhas atividades com relação as aulas aqui, mas não há nada de importante ainda no README.
+Irei commitar todas as minhas atividades com relação as aulas aqui, ainda organizarei os diretórios de forma melhor.
