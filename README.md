@@ -1,2 +1,2 @@
 # furb
-Irei commitar todas as minhas atividades com relação as aulas aqui, ainda organizarei os diretórios de forma melhor.
+Irei commitar todas as minhas atividades com relação as aulas aqui e futuramente deixarei os diretórios de forma mais organizada visando as próximas atividades.
