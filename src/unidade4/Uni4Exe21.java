@@ -19,24 +19,16 @@ public class Uni4Exe21 {
 
 		if (imc >= 40) {
 			classificacao = "Obesidade Grau III";
+		} else if (imc >= 35) {
+			classificacao = "Obesidade Grau II";
+		} else if (imc >= 30) {
+			classificacao = "Obesidade Grau I";
+		} else if (imc >= 25) {
+			classificacao = "Sobrepeso";
+		} else if (imc > 18.5) {
+			classificacao = "Sudável";
 		} else {
-			if (imc >= 35) {
-				classificacao = "Obesidade Grau II";
-			} else {
-				if (imc >= 30) {
-					classificacao = "Obesidade Grau I";
-				} else {
-					if (imc >= 25) {
-						classificacao = "Sobrepeso";
-					} else {
-						if (imc > 18.5) {
-							classificacao = "Sudável";
-						} else {
-							classificacao = "Magreza";
-						}
-					}
-				}
-			}
+			classificacao = "Magreza";
 		}
 
 		System.out.println("O IMC do paciente é " + classificacao);

@@ -17,12 +17,10 @@ public class Uni4Exe10 {
 
 		if (idMar < idZe && idMar < idLulu) {
 			System.out.println("Marquinhos é o caçula da família.");
+		} else if (idZe < idMar && idZe < idLulu) {
+			System.out.println("Zezinho é o caçula da família.");
 		} else {
-			if (idZe < idMar && idZe < idLulu) {
-				System.out.println("Zezinho é o caçula da família.");
-			} else {
-				System.out.println("Luluzinha é a caçula da família.");
-			}
+			System.out.println("Luluzinha é a caçula da família.");
 		}
 
 		ler.close();

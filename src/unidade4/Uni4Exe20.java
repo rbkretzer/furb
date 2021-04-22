@@ -23,30 +23,16 @@ public class Uni4Exe20 {
 
 		if (media >= 9) {
 			conceito = 'A';
+		} else if (media >= 7.5) {
+			conceito = 'B';
+		} else if (media >= 6) {
+			conceito = 'C';
+		} else if (media >= 4) {
+			conceito = 'D';
 		} else {
-			if (media >= 7.5) {
-				conceito = 'B';
-			} else {
-				if (media >= 6) {
-					conceito = 'C';
-				} else {
-					if (media >= 4) {
-						conceito = 'D';
-					} else {
-						conceito = 'E';
-					}
-				}
-			}
+			conceito = 'E';
 		}
-
-		// resolução com if
-		if (conceito == 'A' || conceito == 'B' || conceito == 'C') {
-			System.out.println("Aluno(a) aprovado(a)");
-		} else {
-			System.out.println("Aluno(a) reprovado(a)");
-		}
-
-		// resolução com case
+		
 		switch (conceito) {
 		case 'C':
 		case 'D':

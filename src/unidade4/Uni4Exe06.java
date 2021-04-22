@@ -13,21 +13,22 @@ public class Uni4Exe06 {
 
 		char primeiraLetra = letra.charAt(0);
 
-		if (primeiraLetra == 'M') {
+		switch (primeiraLetra) {
+		case 'M':
 			System.out.println("Masculino.");
-		} else {
-			if (primeiraLetra == 'F') {
-				System.out.println("Feminino.");
-			} else {
-				if (primeiraLetra == 'O') {
-					System.out.println("Outros.");
-				} else {
-					System.out.println("Entrada incorreta!!!");
-				}
-			}
+			break;
+		case 'F':
+			System.out.println("Feminino.");
+			break;
+		case 'O':
+			System.out.println("Outros.");
+			break;
+		default:
+			System.out.println("Entrada inválida.");
 		}
 
 		ler.close();
+
 	}
 
 }

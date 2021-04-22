@@ -13,7 +13,7 @@ public class Uni4Exe17 {
 		System.out.println("Digite o seu número de dependentes: ");
 		int dependentes = ler.nextInt();
 
-		double rendaLiquida = renda - (dependentes * 0.2);
+		double rendaLiquida = renda - (renda * dependentes * 0.2);
 
 		double ir;
 

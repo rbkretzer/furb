@@ -23,22 +23,14 @@ public class Uni4Exe14 {
 
 		if (mes < 1 && mes > 12) {
 			ehValida = false;
-		} else {
-			if (dia < 1 || dia > 31 && mes % 2 != 0 || mes == 8) {
-				ehValida = false;
-			} else {
-				if (mes != 2 && dia > 30) {
-					ehValida = false;
-				} else {
-					if (ehBissexto && dia > 29) {
-						ehValida = false;
-					} else {
-						if (!ehBissexto && dia > 28) {
-							ehValida = false;
-						}
-					}
-				}
-			}
+		} else if (dia < 1 || dia > 31 && mes % 2 != 0 || mes == 8) {
+			ehValida = false;
+		} else if (mes != 2 && dia > 30) {
+			ehValida = false;
+		} else if (ehBissexto && dia > 29) {
+			ehValida = false;
+		} else if (!ehBissexto && dia > 28) {
+			ehValida = false;
 		}
 
 		if (ehValida) {

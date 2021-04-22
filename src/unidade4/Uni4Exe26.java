@@ -30,7 +30,7 @@ public class Uni4Exe26 {
 		case 'R':
 			System.out.print("Digite o valor da base: ");
 			b = ler.nextDouble();
-			System.out.println("Digite o valor da altura: ");
+			System.out.print("Digite o valor da altura: ");
 			h = ler.nextDouble();
 			area = b * h;
 			break;

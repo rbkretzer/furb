@@ -51,7 +51,7 @@ public class Uni4Exe23 {
 			mesExtenso = "Dezembro";
 			break;
 		default:
-			mesExtenso = "Valor não é valido";
+			mesExtenso = "Valor inválido";
 		}
 
 		System.out.println(mesExtenso);

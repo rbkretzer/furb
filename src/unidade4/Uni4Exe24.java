@@ -19,61 +19,47 @@ public class Uni4Exe24 {
 
 		int opcao = ler.nextInt();
 
-		int idx0, idx1, idx2;
+		int valorAlto, valorMedio, valorBaixo;
 
 		if (valor1 < valor2 && valor1 < valor3) {
-			idx2 = valor1;
+			valorBaixo = valor1;
+		} else if (valor2 < valor1 && valor2 < valor3) {
+			valorBaixo = valor2;
 		} else {
-			if (valor2 < valor1 && valor2 < valor3) {
-				idx2 = valor2;
-			} else {
-				idx2 = valor3;
-			}
+			valorBaixo = valor3;
 		}
+
 		if ((valor1 > valor2 && valor1 < valor3) || (valor1 > valor3 && valor1 < valor2)) {
-			idx1 = valor1;
+			valorMedio = valor1;
+		} else if ((valor2 > valor1 && valor2 < valor3) || (valor2 > valor3 && valor2 < valor1)) {
+			valorMedio = valor2;
 		} else {
-			if ((valor2 > valor1 && valor2 < valor3) || (valor2 > valor3 && valor2 < valor1)) {
-				idx1 = valor2;
-			} else {
-				idx1 = valor3;
-			}
+			valorMedio = valor3;
 		}
+
 		if (valor1 > valor2 && valor1 > valor3) {
-			idx0 = valor1;
+			valorAlto = valor1;
+		} else if (valor2 > valor1 && valor2 > valor3) {
+			valorAlto = valor2;
 		} else {
-			if (valor2 > valor1 && valor2 > valor3) {
-				idx0 = valor2;
-			} else {
-				idx0 = valor3;
-			}
+			valorAlto = valor3;
 		}
 
 		switch (opcao) {
 		case 1:
-			System.out.println(idx2 + "\n" + idx1 + "\n" + idx0);
+			System.out.println(valorBaixo + "\n" + valorMedio + "\n" + valorAlto);
 			break;
 		case 2:
-			System.out.println(idx0 + "\n" + idx1 + "\n" + idx2);
+			System.out.println(valorAlto + "\n" + valorMedio + "\n" + valorBaixo);
 			break;
 		case 3:
-			if (valor1 > valor2 && valor1 > valor3) {
-				idx1 = valor1;
-				idx0 = valor2;
-				idx2 = valor3;
-
+			if (valorAlto == valor1) {
+				System.out.println(valor2+ "\n" + valorAlto + "\n" + valor3);
+			} else if (valorAlto == valor2) {
+				System.out.println(valor1+ "\n" + valorAlto + "\n" + valor3);
 			} else {
-				if (valor2 > valor1 && valor2 > valor3) {
-					idx0 = valor1;
-					idx1 = valor2;
-					idx2 = valor3;
-				} else {
-					idx0 = valor1;
-					idx1 = valor3;
-					idx2 = valor2;
-				}
+				System.out.println(valor1+ "\n" + valorAlto + "\n" + valor2);
 			}
-			System.out.println(idx0 + "\n" + idx1 + "\n" + idx2);
 			break;
 		default:
 			System.out.println("Opção inválida");
