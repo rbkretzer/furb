@@ -16,11 +16,11 @@ public class Uni4Exe11 {
 		int ano3 = ler.nextInt();
 
 		if (ano1 == ano2 && ano1 == ano3) {
-			System.out.println("TRIGÊMIOS");
+			System.out.println("TRIGÊMEOS");
 		} else if (ano1 != ano2 && ano1 != ano3 && ano2 != ano3) {
 			System.out.println("APENAS IRMÃOS");
 		} else {
-			System.out.println("GÊMIOS");
+			System.out.println("GÊMEOS");
 		}
 
 		ler.close();
