@@ -11,15 +11,15 @@ public class Uni5Exe12 {
 		int linhas = ler.nextInt();
 		int valorAtual = 0;
 		
-		String linha = "";
-		
 		for(int i = 1; i <= linhas; i++) {
+			String linha = "";
 			for (int count = 1; count <= i; count++) {
 				valorAtual++; 
 				linha += valorAtual + " ";
 			}
 			System.out.println(linha);
 		}
+		ler.close();
 
 	}
 
