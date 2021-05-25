@@ -5,12 +5,13 @@ public class Uni5Exe10 {
 	public static void main(String[] args) {
 		
 		int valorAtual = 1;
-		int comparador = 1;
+		int valorMetade1 = 0;
+		int valorMetade2 = 0;
+		int comparador = 0;
 		
 		for (int i = 1; i <= 10; i++) {
-			int valorMetade1 = 0;
-			int valorMetade2 = 0;
-			for (int count = valorAtual; count == comparador; count++) {
+			comparador = 0;
+			for (int count = valorAtual; count != comparador; count++) {
 				
 				double valor = Math.pow(count, 2);
 				
@@ -37,10 +38,8 @@ public class Uni5Exe10 {
 				
 				if(soma == count) {
 					System.out.println(Integer.parseInt(valorInteiroTexto));
-					valorAtual = Integer.parseInt(valorInteiroTexto);
-					comparador += 1;
-				} else {
-					comparador += 1;
+					valorAtual = Integer.parseInt(valorInteiroTexto) + 1;
+					comparador = valorAtual;
 				}
 				
 			}
