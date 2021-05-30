@@ -28,6 +28,8 @@ public class Uni5Exe09 {
 			}
 		}
 		
+		ler.close();
+		
 		System.out.println(maiorVinte + " alunos têm mais que 20 anos");
 		
 	}
