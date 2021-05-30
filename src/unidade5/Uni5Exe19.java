@@ -30,7 +30,7 @@ public class Uni5Exe19 {
 			valorCompra = ler.nextDouble();
 		}
 
-		System.out.println("Valor toatal arrecadado no dia: " + df.format(valorTotalRecebido));
+		System.out.println("Valor total arrecadado no dia: " + df.format(valorTotalRecebido));
 
 		ler.close();
 

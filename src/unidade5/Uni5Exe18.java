@@ -20,7 +20,7 @@ public class Uni5Exe18 {
 
 		while (numeroCanal != 0) {
 
-			System.out.print("Digite o número de pessoas assitindo a TV: ");
+			System.out.print("Digite o número de pessoas assistindo a TV: ");
 			numeroPessoas = ler.nextInt();
 
 			switch (numeroCanal) {
@@ -42,8 +42,8 @@ public class Uni5Exe18 {
 		double audiencia9 = (somaAudienciaCanal9 / totalQuantAudiencia) * 100;
 		double audiencia12 = (somaAudienciaCanal12 / totalQuantAudiencia) * 100;
 
-		System.out.println("Percentual audiência canasl 4: " + audiencia4 + "%\nPercentual audiência canasl 5: "
-				+ audiencia5 + "%\nPercentual audiência canasl 9: " + audiencia9 + "%\nPercentual audiência canasl 12: "
+		System.out.println("Percentual audiência canal 4: " + audiencia4 + "%\nPercentual audiência canal 5: "
+				+ audiencia5 + "%\nPercentual audiência canal 9: " + audiencia9 + "%\nPercentual audiência canal 12: "
 				+ audiencia12);
 
 		ler.close();

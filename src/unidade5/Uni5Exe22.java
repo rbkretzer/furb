@@ -11,7 +11,7 @@ public class Uni5Exe22 {
 		double salarioAtual = salario + (salario * (aumentoAtual / 100));
 		ano++;
 
-		while (ano <= 2021) {
+		while (ano <= 2005) {
 			aumentoAtual *= 2;
 			salarioAtual = salario + (salario * (aumentoAtual / 100.0));
 			ano++;

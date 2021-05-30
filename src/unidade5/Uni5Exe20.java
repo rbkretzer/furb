@@ -38,7 +38,7 @@ public class Uni5Exe20 {
 		String segTexto = segComDecimaisTexto.substring(0, posicaoPontoSeg);
 		int segundos = Integer.parseInt(segTexto);
 
-		System.out.println("A mass inicial de " + massa + "Kg, levou " + horas + "h " + min + "min " + segundos
+		System.out.println("A massa inicial de " + massa + "Kg, levou " + horas + "h " + min + "min " + segundos
 				+ "s para chegar a " + massaGramas + "g.");
 
 		ler.close();
