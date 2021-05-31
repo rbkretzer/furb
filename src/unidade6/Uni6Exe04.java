@@ -12,6 +12,7 @@ public class Uni6Exe04 {
 		lerVetores(vetor1, vetor2);
 		int[] vetorSoma = somaVetores(vetor1, vetor2);
 		imprimeVetores(vetor1, vetor2, vetorSoma);
+		ler.close();
 	}
 	
 	public void lerVetores(int[] vetor1, int[] vetor2) {

@@ -47,6 +47,7 @@ public class Uni6Exe10 {
 			}
 
 		} while (opcao != 7);
+		ler.close();
 	}
 
 	public boolean inserir(int[] vetor, int total) {
